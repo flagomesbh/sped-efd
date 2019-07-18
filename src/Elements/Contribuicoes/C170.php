@@ -266,6 +266,13 @@ class C170 extends Element implements ElementInterface
             'info' => 'Código da conta analítica contábil debitada/creditada',
             'format' => ''
         ],
+        'VL_ABAT_NT' => [
+            'type' => 'numeric',
+            'regex' => '^\d+(\.\d*)?|\.\d+$',
+            'required' => false,
+            'info' => 'Abatimento não tributado e não comercial Ex. desconto ICMS nas remessas para ZFM.',
+            'format' => '15v2'
+        ],
 
     ];
 
